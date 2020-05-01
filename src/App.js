@@ -6,10 +6,6 @@ import ChildComponent from "./Components/ChildComponent";
 function App() {
   const [childCounter, setChildCounter] = useState(0);
 
-  useEffect(() => {
-    console.log("childCounter from effect: ", childCounter);
-  }, [childCounter]);
-
   const child_clicked = (value) => {
     console.log("Value: ", value);
     setChildCounter(value);
