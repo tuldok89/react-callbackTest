@@ -15,7 +15,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <p>{childCounter}</p>
+      <p>Parent: {childCounter}</p>
       <ChildComponent onButtonClick={child_clicked} />
       <ChildComponent2 counter={childCounter} />
     </React.Fragment>
